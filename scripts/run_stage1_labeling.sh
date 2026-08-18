@@ -3,7 +3,7 @@ set -e
 
 # ================= Configuration =================
 # Modify this path to point to your local model
-MODEL_PATH="Qwen/Qwen2.5-7B" 
+MODEL_PATH="Qwen/Qwen3-8B" 
 
 # Input: The cleaned dataset from Step 0
 INPUT_DATA="data/processed/dataset_cleaned.jsonl"
