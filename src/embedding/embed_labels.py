@@ -145,7 +145,7 @@ def run_embedding(args):
         all_embeddings = np.concatenate(buffer_embeddings, axis=0)
         # We save 'embedding' (singular) to match utils_io.py expectation
         # We also save the labels so we can double-check order later if needed
-        save_path = os.path.join(args.output_dir, f'embedding_rank{rank}.npz')
+        save_path = os.path.join(args.output_dir, f'embedding_rank{rank}_part0.npz')
         
         np.savez(save_path, 
                  labels=np.array(buffer_labels), 
