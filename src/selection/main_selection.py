@@ -6,7 +6,7 @@ import random
 
 # Modules
 from utils_io import load_and_reorder_embeddings, save_indices, save_subset_to_jsonl
-from utils_label import get_one_hot_embeddings, get_summed_embeddings, get_max_pooled_embeddings, get_tfidf_embeddings
+from utils_labels import get_one_hot_embeddings, get_summed_embeddings, get_max_pooled_embeddings, get_tfidf_embeddings
 from utils_fusion import combine_embeddings
 from algo_clustering import run_kmeans
 from algo_stratified import stratified_sample
