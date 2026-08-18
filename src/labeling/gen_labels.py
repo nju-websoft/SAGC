@@ -115,7 +115,7 @@ Your Task:
 
 Output Format (Strictly Follow This Order):
 
-First, provide a detailed analysis. Second, provide the final JSON output of labels enclosed in markdown fences (start with "[TRIPLE_BACKTICKS]label" and end with "[TRIPLE_BACKTICKS]").
+First, provide a detailed analysis. Second, provide the final JSON output of labels enclosed in markdown fences (start with "```label" and end with "```").
 
 1. Analysis of Key Characteristics: 
     - Main Goal: ...
@@ -142,7 +142,7 @@ Problem:
 
 def get_prompt_easy(problem):
     """Original 'gen_label_wo_selection_prompt_eazy'"""
-    sys_prompt = "You are a senior AI Python programming assistant. Your task is to analyze a given programming problem to extract a set of descriptive labels."
+    sys_prompt = "You are a senior AI Python programming assistant. Your task is to analyze a given programming problem to extract a set of descriptive labels. These labels should accurately capture the core essence of the task."
 
     
     user_prompt = f"""
@@ -150,7 +150,7 @@ Input Provided:
 - Problem Description
 
 Your Task:
-Analyze the given problem. Generate descriptive labels that capture the core essence of the task. Provide the final JSON output of labels enclosed in markdown fences (start with "[TRIPLE_BACKTICKS]label" and end with "[TRIPLE_BACKTICKS]").
+Analyze the given problem. Generate descriptive labels that capture the core essence of the task. Provide the final JSON output of labels enclosed in markdown fences (start with "```label" and end with "```").
 
 Output Format (Strictly Follow This Order):
 
