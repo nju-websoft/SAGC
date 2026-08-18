@@ -32,7 +32,8 @@ python src/labeling/gen_labels.py \
     --model_path "${MODEL_PATH}" \
     --input_file "${INPUT_DATA}" \
     --output_file "${RAW_LABELED_DATA}" \
-    --batch_size ${BATCH_SIZE} 
+    --batch_size ${BATCH_SIZE} \
+    --easy_mode
 
 # 2. Cleaning
 echo ">>> [2/3] Cleaning & Normalizing Labels..."
