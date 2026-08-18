@@ -2,12 +2,10 @@
 set -e
 
 # ========================================================
-#  Stage 3: SAGeC Selection (Golden Path Configuration)
+# Stage 3: SAGC Selection (Golden Path Configuration)
 # ========================================================
-
-# --- 1. Core Algorithm Configuration ---
-# The configuration below reproduces the main result (SOTA) of the paper.
-# Method: SAGeC (K-Means Clustering)
+# The configuration below reproduces the main reported SAGC result.
+# Method: SAGC (K-Means Clustering)
 # Fusion: Max-Pooling of Label Embeddings
 METHOD="kmeans"
 CONCAT_TYPE="max"      # Options: 'sum', 'max', 'tfidf'
